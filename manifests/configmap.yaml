@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: catalog-runtime
+  namespace: cartline-catalog
+  labels:
+    app.kubernetes.io/name: catalog-api
+data:
+  SERVICE_NAME: cartline-catalog
+  CATALOG_MARKET: eu-west
+  DEPENDENCY_INIT_SECONDS: "4"
